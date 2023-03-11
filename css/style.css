@@ -120,7 +120,7 @@ h1 {
     width: 412px;
     background-image: url("../img/Mala-mobile.png");
     margin-top: 30px;
-    animation: myAnim 0s ease 0s 1 normal forwards;
+    animation: none;
 
   }
 }
