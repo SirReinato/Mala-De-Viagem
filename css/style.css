@@ -1,0 +1,316 @@
+/* GERAL */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* MAIN BG/CONTAINER */
+.bg-main {
+  min-height: 80vh;
+  width: 1100px;
+  margin: 10px auto;
+  border-radius: 10px;
+
+  background: linear-gradient(
+    290.72deg,
+    rgba(97, 65, 37, 0.71) 1.05%,
+    rgba(250, 194, 145, 0.77) 100%
+  );
+  box-shadow: -1px -1px 22px 0px rgba(0, 0, 0, 0.75);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: -26px;
+}
+
+@media (max-width: 415px) {
+body{
+    background: linear-gradient(
+    290.72deg,
+    rgba(97, 65, 37, 0.71) 1.05%,
+    rgba(250, 194, 145, 0.77) 100%
+  );
+}
+  .bg-main {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .container {
+    display: block;
+    margin-top: -26px;
+  }
+}
+
+/* H1 DISPLAY */
+h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 25px;
+  line-height: 48px;
+
+  color: #072a31;
+}
+
+.coluna {
+  width: 40%;
+  height: 40%;
+  padding: 5%;
+  text-align: center;
+}
+@media (max-width: 415px) {
+  h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .coluna {
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+  }
+}
+/* MALA DE VIAGEM */
+
+.mala-bg {
+  width: 505px;
+  height: 319px;
+  background: url("../img/Mala.png");
+  margin-top: 40px;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 100%;
+  }
+
+  10% {
+    transform: rotate(2deg);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: rotate(-4deg);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: rotate(4deg);
+  }
+
+  80% {
+    transform: rotate(-2deg);
+  }
+
+  90% {
+    transform: rotate(2deg);
+  }
+}
+@media (max-width: 415px) {
+  .mala-bg {
+    width: 412px;
+    background-image: url("../img/Mala-mobile.png");
+    margin-top: 30px;
+  }
+}
+
+/* FORMULARIO CONTAINER */
+.form {
+  height: 46px;
+  width: 381px;
+  margin-top: 40px;
+}
+
+h2 {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 10px;
+
+  color: #072a31;
+}
+
+.li {
+  margin-bottom: 90px;
+}
+
+/* FORMULARIO */
+.item-label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  display: block;
+  text-align: left;
+  padding: 2% 10%;
+
+  color: #fac291;
+}
+
+.item-label:first-child {
+  padding-top: 25%;
+}
+
+.item-input {
+  width: 381px;
+  height: 46px;
+  margin-left: 10%;
+  border-radius: 10px;
+  font-size: 25px;
+
+  background: #fac291;
+}
+
+.item-input:hover {
+  box-shadow: rgba(37, 37, 83, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.1) 0px 18px 36px -18px inset;
+}
+
+.item-input2 {
+  width: 250px;
+  height: 46px;
+  margin-left: 10%;
+  border-radius: 10px;
+  font-size: 25px;
+
+  background: #fac291;
+}
+
+.item-input2:hover {
+  box-shadow: rgba(37, 37, 83, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.1) 0px 18px 36px -18px inset;
+}
+
+.btn {
+  width: 80px;
+  height: 46px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 40px 40px #fac291 inset, 0 0 0 0 #fac291;
+  border-color: #fac291;
+
+  transition: all 150ms ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px 0 #614125 inset, 0 0 10px 4px #fac291;
+}
+@media (max-width: 415px) {
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 30px auto;
+  }
+  .form {
+    margin-top: 10px;
+    height: 30px;
+  }
+  .item-input {
+    width: 330px;
+    height: 46px;
+    border-radius: 10px;
+    font-size: 25px;
+
+    background: #fac291;
+  }
+
+  .btn {
+    height: 50px;
+  }
+}
+
+/* TOTAL DE ITENS  */
+.placar {
+  width: 200px;
+  height: 80px;
+  margin: 10px auto;
+  background: #614125;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.placar h3 {
+  font-size: 25px;
+  padding-top: 10px;
+  color: #fac291;
+}
+
+.placar .p {
+  padding-top: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  color: #fac291;
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/* ITENS DA MALA */
+.itemDaLista {
+  list-style: none;
+  text-align: left;
+  width: 350px;
+  min-height: 60px;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 10px;
+
+  background: #614125;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  border-radius: 10px;
+}
+
+.itemDaLista strong {
+  min-width: 50px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 5%;
+  margin-right: 5%;
+  display: inline-block;
+
+  background: #fac291;
+}
+@media (max-width: 415px) {
+  .itemDaLista {
+    margin: 10px auto;
+  }
+  .li {
+    margin: 10px auto;
+    padding-bottom: 40px;
+  }
+}

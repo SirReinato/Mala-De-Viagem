@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Mala de Viagem</title>
+  </head>
+  <body>
+    <main class="bg-main">
+      <h1>Itens de Viagem</h1>
+      <!-- TOTAL DE ITENS -->
+      <div class="placar">
+        <h3>Total de itens</h3>
+        <p class="p"></p>
+      </div>
+      <!-- SECTION, INICIO -->
+      <section class="container">
+        <div class="coluna aMala">
+          <h2>Mala de viagem</h2>
+          <div class="mala-bg">
+            <!-- FORMULARIO  -->
+            <form id="form" class="form">
+              <div>
+                <label for="produto" class="item-label">Produto</label>
+                <input
+                  type="text"
+                  class="item-input"
+                  id="produto"
+                  name="produto"
+                  autofocus
+                  required
+                />
+                <label for="quantidade" class="item-label">Quantidade</label>
+                <input
+                  type="text"
+                  class="item-input2"
+                  id="quantidade"
+                  name="quantidade"
+                  autofocus
+                  required
+                />
+                <input type="submit" class="btn" value="Colocar" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- LISTAS DE ITENS -->
+        <article class="coluna aLista">
+          <h2 class="li">Itens da mala</h2>
+          <ul class="lista"></ul>
+          <input type="button" class="btn" id="limpar" value="Limpar" />
+        </article>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
